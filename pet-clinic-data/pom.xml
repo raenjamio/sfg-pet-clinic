@@ -5,14 +5,14 @@
   <parent>
     <groupId>raenjamio.springframework</groupId>
     <artifactId>sfg-pet-clinic</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
   </parent>
   
   
   <groupId>raenjamio.springframework</groupId>
   <artifactId>pet-clinic-data</artifactId>
   
-  <version>0.0.1</version>
+  <version>0.0.2-SNAPSHOT</version>
   
   <name>pet-clinic-data</name>
   <url>http://maven.apache.org</url>
