@@ -2,10 +2,14 @@ package raenjamio.springframework.sfgpetclinic.services.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import raenjamio.springframework.sfgpetclinic.model.Vet;
 import raenjamio.springframework.sfgpetclinic.services.CrudService;
+import raenjamio.springframework.sfgpetclinic.services.VetService;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long>{
+@Service
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
 	@Override
 	public Set<Vet> findAll() {
