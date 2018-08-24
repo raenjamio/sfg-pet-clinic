@@ -2,13 +2,12 @@
 <html lang="es" xmlns:th="http://thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<title>Index Owner</title>
+<title>Index Vet</title>
 </head>
 <body>
 	<h1 th:text="'Index List....'">Index Page</h1>
- 
- 
- 	<table>
+	
+	<table>
 		<thead>
 			<tr>
 				<th>Id</th>
@@ -17,14 +16,14 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr th:each="own : ${owners}" >
-				<td th:text=${own.id}>Id</td>
-				<td th:text=${own.firstName}>First Name</td>
-				<td th:text=${own.lastName}>Last Name</td>
+			<tr th:each="vet : ${vets}" >
+				<td th:text=${vet.id}>Id</td>
+				<td th:text=${vet.firstName}>First Name</td>
+				<td th:text=${vet.lastName}>Last Name</td>
 			</tr>
 		</tbody>
 	
 	</table>
-	
+ 
 </body>
 </html>
