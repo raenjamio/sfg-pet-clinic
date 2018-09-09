@@ -3,6 +3,7 @@ package raenjamio.springframework.sfgpetclinic.services.springdatadjpa;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import raenjamio.springframework.sfgpetclinic.model.Owner;
@@ -14,6 +15,7 @@ import raenjamio.springframework.sfgpetclinic.services.PetService;
 import raenjamio.springframework.sfgpetclinic.services.PetTypeService;
 
 @Service
+@Profile("springdatajpa")
 public class OwnerSDJpaService implements OwnerService{
 	
 	private final OwnerRepository ownerRepository;
