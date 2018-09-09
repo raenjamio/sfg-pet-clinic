@@ -7,16 +7,16 @@ import org.springframework.stereotype.Service;
 import raenjamio.springframework.sfgpetclinic.model.Speciality;
 import raenjamio.springframework.sfgpetclinic.model.Vet;
 import raenjamio.springframework.sfgpetclinic.services.CrudService;
-import raenjamio.springframework.sfgpetclinic.services.SpecialitiesService;
+import raenjamio.springframework.sfgpetclinic.services.SpecialtyService;
 import raenjamio.springframework.sfgpetclinic.services.VetService;
 
 @Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 	
-	private final SpecialitiesService specialityService;
+	private final SpecialtyService specialityService;
 	
 	
-	public VetServiceMap(SpecialitiesService specialityService) {
+	public VetServiceMap(SpecialtyService specialityService) {
 		super();
 		this.specialityService = specialityService;
 	}

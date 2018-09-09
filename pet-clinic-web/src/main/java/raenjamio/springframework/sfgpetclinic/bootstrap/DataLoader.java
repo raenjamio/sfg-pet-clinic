@@ -12,7 +12,7 @@ import raenjamio.springframework.sfgpetclinic.model.Speciality;
 import raenjamio.springframework.sfgpetclinic.model.Vet;
 import raenjamio.springframework.sfgpetclinic.services.OwnerService;
 import raenjamio.springframework.sfgpetclinic.services.PetTypeService;
-import raenjamio.springframework.sfgpetclinic.services.SpecialitiesService;
+import raenjamio.springframework.sfgpetclinic.services.SpecialtyService;
 import raenjamio.springframework.sfgpetclinic.services.VetService;
 
 @Component
@@ -21,10 +21,10 @@ public class DataLoader implements CommandLineRunner{
 	private final OwnerService ownerService; 
 	private final VetService vetService;
 	private final PetTypeService petTypeService;
-	private final SpecialitiesService specialitiesService;
+	private final SpecialtyService specialitiesService;
 	
 
-	public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialitiesService specialitiesService) {
+	public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialtyService specialitiesService) {
 		this.ownerService = ownerService;
 		this.vetService = vetService;
 		this.petTypeService = petTypeService;
