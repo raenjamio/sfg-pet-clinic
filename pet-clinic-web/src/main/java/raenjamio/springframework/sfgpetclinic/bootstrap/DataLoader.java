@@ -76,6 +76,7 @@ public class DataLoader implements CommandLineRunner{
 		owner1.setAddress("Calle 2");
 		owner1.setCity("Mataderos");
 		owner1.setTelephone("42222222");
+		
 		/*
 		owner1.setAddress("123 Brickerel");
 		owner1.setCity("Miami");
